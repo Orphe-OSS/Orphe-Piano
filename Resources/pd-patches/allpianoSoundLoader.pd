@@ -1,0 +1,46 @@
+#N canvas 485 23 536 532 10;
+#X obj -12 60 \$1;
+#X floatatom -12 83 5 0 0 0 - - -;
+#X obj -12 38 loadbang;
+#X obj -200 376 outlet~;
+#X obj -200 33 inlet bng;
+#X obj -143 376 outlet playedbang;
+#X obj -114 32 loadbang;
+#X obj -200 167 spigot;
+#X obj -115 135 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X msg -70 104 0;
+#X msg -115 80 1;
+#X obj -175 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -70 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -116 58 del 50;
+#X msg -12 200 allpiano/piano\$1.wav;
+#X floatatom 51 145 5 0 0 0 - - -;
+#X obj 92 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 106 +;
+#X msg 92 79 3;
+#X obj -200 241 filePlayer441;
+#X connect 0 0 1 0;
+#X connect 1 0 14 0;
+#X connect 1 0 17 0;
+#X connect 2 0 0 0;
+#X connect 4 0 7 0;
+#X connect 6 0 10 0;
+#X connect 7 0 12 0;
+#X connect 7 0 5 0;
+#X connect 7 0 13 0;
+#X connect 7 0 19 0;
+#X connect 8 0 7 1;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X connect 11 0 7 0;
+#X connect 12 0 9 0;
+#X connect 13 0 10 0;
+#X connect 14 0 19 1;
+#X connect 16 0 18 0;
+#X connect 17 0 15 0;
+#X connect 18 0 17 1;
+#X connect 19 0 3 0;

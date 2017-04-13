@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95A5690A693E1A92D052745F /* Pods_OrphePiano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7A46B544AD79F8283E645A /* Pods_OrphePiano.framework */; };
+		E65BE37E1E60517C0037900D /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E65BE37B1E6050D10037900D /* libpd-ios.a */; };
+		E68228FF1E9D2D9900058C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228EB1E9D2D9900058C49 /* AppDelegate.swift */; };
+		E68229001E9D2D9900058C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68228EC1E9D2D9900058C49 /* LaunchScreen.storyboard */; };
+		E68229011E9D2D9900058C49 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228EF1E9D2D9900058C49 /* RoundButton.swift */; };
+		E68229021E9D2D9900058C49 /* ConnectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68228F11E9D2D9900058C49 /* ConnectViewController.storyboard */; };
+		E68229031E9D2D9900058C49 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228F21E9D2D9900058C49 /* ConnectViewController.swift */; };
+		E68229041E9D2D9900058C49 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228F31E9D2D9900058C49 /* RoundCell.swift */; };
+		E68229051E9D2D9900058C49 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228F51E9D2D9900058C49 /* CustomCircle.swift */; };
+		E68229061E9D2D9900058C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68228F61E9D2D9900058C49 /* Main.storyboard */; };
+		E68229071E9D2D9900058C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228F71E9D2D9900058C49 /* ViewController.swift */; };
+		E68229081E9D2D9900058C49 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68228F91E9D2D9900058C49 /* Player.swift */; };
+		E68229101E9D2E1D00058C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E682290D1E9D2E1D00058C49 /* Assets.xcassets */; };
+		E68229111E9D2E1D00058C49 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E682290E1E9D2E1D00058C49 /* images.xcassets */; };
+		E68229121E9D2E1D00058C49 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E682290F1E9D2E1D00058C49 /* Info.plist */; };
+		E6B7A3111E1836800029B005 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A3101E1836800029B005 /* AudioToolbox.framework */; };
+		E6B7A3131E1837540029B005 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A3121E1837540029B005 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E65BE37A1E6050D10037900D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E65BE3751E6050D10037900D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		E65BE37C1E6050D10037900D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E65BE3751E6050D10037900D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		E6B7A2E41E181BC00029B005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B7A2C71E181BC00029B005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B7A2CE1E181BC00029B005;
+			remoteInfo = "Orphe-Instrument";
+		};
+		E6B7A2EF1E181BC00029B005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B7A2C71E181BC00029B005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B7A2CE1E181BC00029B005;
+			remoteInfo = "Orphe-Instrument";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E68229191E9DF77300058C49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F7A46B544AD79F8283E645A /* Pods_OrphePiano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrphePiano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		435D74565C21689D235FA5A1 /* Pods-OrphePiano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrphePiano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrphePiano/Pods-OrphePiano.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8139AA739E59A3059799C3 /* Pods-OrphePiano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrphePiano.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrphePiano/Pods-OrphePiano.release.xcconfig"; sourceTree = "<group>"; };
+		E65BE3751E6050D10037900D /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		E68228EB1E9D2D9900058C49 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E68228ED1E9D2D9900058C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E68228EF1E9D2D9900058C49 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		E68228F11E9D2D9900058C49 /* ConnectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectViewController.storyboard; sourceTree = "<group>"; };
+		E68228F21E9D2D9900058C49 /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		E68228F31E9D2D9900058C49 /* RoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
+		E68228F51E9D2D9900058C49 /* CustomCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
+		E68228F61E9D2D9900058C49 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E68228F71E9D2D9900058C49 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E68228F91E9D2D9900058C49 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E682290C1E9D2DCE00058C49 /* OrphePiano-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OrphePiano-Bridging-Header.h"; path = "OrphePiano/OrphePiano-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E682290D1E9D2E1D00058C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OrphePiano/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		E682290E1E9D2E1D00058C49 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = OrphePiano/images.xcassets; sourceTree = SOURCE_ROOT; };
+		E682290F1E9D2E1D00058C49 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OrphePiano/Info.plist; sourceTree = SOURCE_ROOT; };
+		E6B7A2CF1E181BC00029B005 /* OrphePiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrphePiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B7A2E31E181BC00029B005 /* OrphePianoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrphePianoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B7A2EE1E181BC00029B005 /* OrphePianoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrphePianoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B7A3101E1836800029B005 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E6B7A3121E1837540029B005 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6B7A2CC1E181BC00029B005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65BE37E1E60517C0037900D /* libpd-ios.a in Frameworks */,
+				E6B7A3131E1837540029B005 /* AVFoundation.framework in Frameworks */,
+				E6B7A3111E1836800029B005 /* AudioToolbox.framework in Frameworks */,
+				95A5690A693E1A92D052745F /* Pods_OrphePiano.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2E01E181BC00029B005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2EB1E181BC00029B005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E5315AE52D16693D7025869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				435D74565C21689D235FA5A1 /* Pods-OrphePiano.debug.xcconfig */,
+				9F8139AA739E59A3059799C3 /* Pods-OrphePiano.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E65BE3761E6050D10037900D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E65BE37B1E6050D10037900D /* libpd-ios.a */,
+				E65BE37D1E6050D10037900D /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68228EA1E9D2D9900058C49 /* OrphePiano */ = {
+			isa = PBXGroup;
+			children = (
+				E68228EB1E9D2D9900058C49 /* AppDelegate.swift */,
+				E68228EC1E9D2D9900058C49 /* LaunchScreen.storyboard */,
+				E68228EE1E9D2D9900058C49 /* CommonUI */,
+				E68228F01E9D2D9900058C49 /* ConnectViewController */,
+				E68228F41E9D2D9900058C49 /* MainViewController */,
+				E68228F81E9D2D9900058C49 /* Pd */,
+				E68228FA1E9D2D9900058C49 /* SupportingFiles */,
+			);
+			path = OrphePiano;
+			sourceTree = "<group>";
+		};
+		E68228EE1E9D2D9900058C49 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				E68228EF1E9D2D9900058C49 /* RoundButton.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		E68228F01E9D2D9900058C49 /* ConnectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E68228F11E9D2D9900058C49 /* ConnectViewController.storyboard */,
+				E68228F21E9D2D9900058C49 /* ConnectViewController.swift */,
+				E68228F31E9D2D9900058C49 /* RoundCell.swift */,
+			);
+			path = ConnectViewController;
+			sourceTree = "<group>";
+		};
+		E68228F41E9D2D9900058C49 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E68228F51E9D2D9900058C49 /* CustomCircle.swift */,
+				E68228F61E9D2D9900058C49 /* Main.storyboard */,
+				E68228F71E9D2D9900058C49 /* ViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		E68228F81E9D2D9900058C49 /* Pd */ = {
+			isa = PBXGroup;
+			children = (
+				E68228F91E9D2D9900058C49 /* Player.swift */,
+			);
+			path = Pd;
+			sourceTree = "<group>";
+		};
+		E68228FA1E9D2D9900058C49 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E682290D1E9D2E1D00058C49 /* Assets.xcassets */,
+				E682290E1E9D2E1D00058C49 /* images.xcassets */,
+				E682290F1E9D2E1D00058C49 /* Info.plist */,
+				E682290C1E9D2DCE00058C49 /* OrphePiano-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E6B7A2C61E181BC00029B005 = {
+			isa = PBXGroup;
+			children = (
+				E68228EA1E9D2D9900058C49 /* OrphePiano */,
+				E65BE3751E6050D10037900D /* libpd.xcodeproj */,
+				E6B7A2D01E181BC00029B005 /* Products */,
+				E6B7A30F1E1836800029B005 /* Frameworks */,
+				3E5315AE52D16693D7025869 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E6B7A2D01E181BC00029B005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6B7A2CF1E181BC00029B005 /* OrphePiano.app */,
+				E6B7A2E31E181BC00029B005 /* OrphePianoTests.xctest */,
+				E6B7A2EE1E181BC00029B005 /* OrphePianoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6B7A30F1E1836800029B005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B7A3121E1837540029B005 /* AVFoundation.framework */,
+				E6B7A3101E1836800029B005 /* AudioToolbox.framework */,
+				0F7A46B544AD79F8283E645A /* Pods_OrphePiano.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6B7A2CE1E181BC00029B005 /* OrphePiano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B7A2F71E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePiano" */;
+			buildPhases = (
+				C77EC3AC7CD5A548EA76D681 /* [CP] Check Pods Manifest.lock */,
+				E6B7A2CB1E181BC00029B005 /* Sources */,
+				E6B7A2CC1E181BC00029B005 /* Frameworks */,
+				E6B7A2CD1E181BC00029B005 /* Resources */,
+				98F2E1D27B42B83DE616F742 /* [CP] Embed Pods Frameworks */,
+				6988B60645E481F79459503A /* [CP] Copy Pods Resources */,
+				E68229191E9DF77300058C49 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrphePiano;
+			productName = "Orphe-Instrument";
+			productReference = E6B7A2CF1E181BC00029B005 /* OrphePiano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6B7A2E21E181BC00029B005 /* OrphePianoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B7A2FA1E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePianoTests" */;
+			buildPhases = (
+				E6B7A2DF1E181BC00029B005 /* Sources */,
+				E6B7A2E01E181BC00029B005 /* Frameworks */,
+				E6B7A2E11E181BC00029B005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B7A2E51E181BC00029B005 /* PBXTargetDependency */,
+			);
+			name = OrphePianoTests;
+			productName = "Orphe-InstrumentTests";
+			productReference = E6B7A2E31E181BC00029B005 /* OrphePianoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6B7A2ED1E181BC00029B005 /* OrphePianoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B7A2FD1E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePianoUITests" */;
+			buildPhases = (
+				E6B7A2EA1E181BC00029B005 /* Sources */,
+				E6B7A2EB1E181BC00029B005 /* Frameworks */,
+				E6B7A2EC1E181BC00029B005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B7A2F01E181BC00029B005 /* PBXTargetDependency */,
+			);
+			name = OrphePianoUITests;
+			productName = "Orphe-InstrumentUITests";
+			productReference = E6B7A2EE1E181BC00029B005 /* OrphePianoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6B7A2C71E181BC00029B005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "no new folk studio Inc";
+				TargetAttributes = {
+					E6B7A2CE1E181BC00029B005 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E6B7A2E21E181BC00029B005 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7P8C3UWHK5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6B7A2CE1E181BC00029B005;
+					};
+					E6B7A2ED1E181BC00029B005 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7P8C3UWHK5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6B7A2CE1E181BC00029B005;
+					};
+				};
+			};
+			buildConfigurationList = E6B7A2CA1E181BC00029B005 /* Build configuration list for PBXProject "OrphePiano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6B7A2C61E181BC00029B005;
+			productRefGroup = E6B7A2D01E181BC00029B005 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E65BE3761E6050D10037900D /* Products */;
+					ProjectRef = E65BE3751E6050D10037900D /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E6B7A2CE1E181BC00029B005 /* OrphePiano */,
+				E6B7A2E21E181BC00029B005 /* OrphePianoTests */,
+				E6B7A2ED1E181BC00029B005 /* OrphePianoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E65BE37B1E6050D10037900D /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = E65BE37A1E6050D10037900D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E65BE37D1E6050D10037900D /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = E65BE37C1E6050D10037900D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6B7A2CD1E181BC00029B005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68229061E9D2D9900058C49 /* Main.storyboard in Resources */,
+				E68229021E9D2D9900058C49 /* ConnectViewController.storyboard in Resources */,
+				E68229121E9D2E1D00058C49 /* Info.plist in Resources */,
+				E68229101E9D2E1D00058C49 /* Assets.xcassets in Resources */,
+				E68229001E9D2D9900058C49 /* LaunchScreen.storyboard in Resources */,
+				E68229111E9D2E1D00058C49 /* images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2E11E181BC00029B005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2EC1E181BC00029B005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6988B60645E481F79459503A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrphePiano/Pods-OrphePiano-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F2E1D27B42B83DE616F742 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrphePiano/Pods-OrphePiano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77EC3AC7CD5A548EA76D681 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6B7A2CB1E181BC00029B005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68229071E9D2D9900058C49 /* ViewController.swift in Sources */,
+				E68229051E9D2D9900058C49 /* CustomCircle.swift in Sources */,
+				E68229031E9D2D9900058C49 /* ConnectViewController.swift in Sources */,
+				E68229011E9D2D9900058C49 /* RoundButton.swift in Sources */,
+				E68229081E9D2D9900058C49 /* Player.swift in Sources */,
+				E68229041E9D2D9900058C49 /* RoundCell.swift in Sources */,
+				E68228FF1E9D2D9900058C49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2DF1E181BC00029B005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B7A2EA1E181BC00029B005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6B7A2E51E181BC00029B005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6B7A2CE1E181BC00029B005 /* OrphePiano */;
+			targetProxy = E6B7A2E41E181BC00029B005 /* PBXContainerItemProxy */;
+		};
+		E6B7A2F01E181BC00029B005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6B7A2CE1E181BC00029B005 /* OrphePiano */;
+			targetProxy = E6B7A2EF1E181BC00029B005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E68228EC1E9D2D9900058C49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68228ED1E9D2D9900058C49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6B7A2F51E181BC00029B005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6B7A2F61E181BC00029B005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6B7A2F81E181BC00029B005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 435D74565C21689D235FA5A1 /* Pods-OrphePiano.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OrphePiano/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.no-new-folk.OrphePiano";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "pd-for-ios/libpd/**";
+			};
+			name = Debug;
+		};
+		E6B7A2F91E181BC00029B005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8139AA739E59A3059799C3 /* Pods-OrphePiano.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OrphePiano/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.no-new-folk.OrphePiano";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "pd-for-ios/libpd/**";
+			};
+			name = Release;
+		};
+		E6B7A2FB1E181BC00029B005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7P8C3UWHK5;
+				INFOPLIST_FILE = "Orphe-InstrumentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakanisynth.Orphe-InstrumentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrphePiano.app/OrphePiano";
+			};
+			name = Debug;
+		};
+		E6B7A2FC1E181BC00029B005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7P8C3UWHK5;
+				INFOPLIST_FILE = "Orphe-InstrumentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakanisynth.Orphe-InstrumentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrphePiano.app/OrphePiano";
+			};
+			name = Release;
+		};
+		E6B7A2FE1E181BC00029B005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7P8C3UWHK5;
+				INFOPLIST_FILE = "Orphe-InstrumentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakanisynth.Orphe-InstrumentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Orphe-Instrument";
+			};
+			name = Debug;
+		};
+		E6B7A2FF1E181BC00029B005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7P8C3UWHK5;
+				INFOPLIST_FILE = "Orphe-InstrumentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakanisynth.Orphe-InstrumentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Orphe-Instrument";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6B7A2CA1E181BC00029B005 /* Build configuration list for PBXProject "OrphePiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B7A2F51E181BC00029B005 /* Debug */,
+				E6B7A2F61E181BC00029B005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B7A2F71E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B7A2F81E181BC00029B005 /* Debug */,
+				E6B7A2F91E181BC00029B005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B7A2FA1E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePianoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B7A2FB1E181BC00029B005 /* Debug */,
+				E6B7A2FC1E181BC00029B005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B7A2FD1E181BC00029B005 /* Build configuration list for PBXNativeTarget "OrphePianoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B7A2FE1E181BC00029B005 /* Debug */,
+				E6B7A2FF1E181BC00029B005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6B7A2C71E181BC00029B005 /* Project object */;
+}

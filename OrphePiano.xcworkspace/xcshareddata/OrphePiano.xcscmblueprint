@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "39BD44AAB60D459BC9CF89E9E4F2D85D7B3B6601",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "39BD44AAB60D459BC9CF89E9E4F2D85D7B3B6601" : 9223372036854775807,
+    "778D08CA7C55C6E283FAC4140D174E64889DF148" : 9223372036854775807,
+    "6F7A20C0CDB7BDCD5180DBA15CA6EBFFD435B7B5" : 9223372036854775807,
+    "1A0B07D1631AC7F0F17FCE76695E42D64F01958F" : 9223372036854775807,
+    "5D9834C2248997F4FF0BCD60C4CB47DA22BE5E90" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7BA9E6DA-9F7F-4374-9529-AA917E1669C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "39BD44AAB60D459BC9CF89E9E4F2D85D7B3B6601" : "Orphe-Piano-OSS\/",
+    "778D08CA7C55C6E283FAC4140D174E64889DF148" : "Orphe-Piano-OSS\/pd-for-ios\/",
+    "6F7A20C0CDB7BDCD5180DBA15CA6EBFFD435B7B5" : "Orphe-Piano-OSS\/pd-for-ios\/libpd\/pure-data\/",
+    "1A0B07D1631AC7F0F17FCE76695E42D64F01958F" : "Orphe-Piano-OSS\/pd-for-ios\/libpd\/",
+    "5D9834C2248997F4FF0BCD60C4CB47DA22BE5E90" : "Orphe-Swift-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OrphePiano",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OrphePiano.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/libpd\/libpd.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A0B07D1631AC7F0F17FCE76695E42D64F01958F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/nonewfolkstudio\/orphe-piano.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "39BD44AAB60D459BC9CF89E9E4F2D85D7B3B6601"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/no-new-folk\/Orphe-Swift-SDK",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D9834C2248997F4FF0BCD60C4CB47DA22BE5E90"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/git.code.sf.net\/p\/pure-data\/pure-data",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F7A20C0CDB7BDCD5180DBA15CA6EBFFD435B7B5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/libpd\/pd-for-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "778D08CA7C55C6E283FAC4140D174E64889DF148"
+    }
+  ]
+}
