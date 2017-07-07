@@ -14,7 +14,7 @@ Orpheを履いて歩くことで、つま先の向き・歩きの速さといっ
 - Orphe-SDK-Swift-1.1.0 
 - and your Orphe!
 
-Orphe-SDK-Swift-1.1.0はFacebookグループの[Orphe Developers Community Japan](https://www.facebook.com/groups/367926056935407/)に参加いただくことでダウンロードすることが出来ます。
+Orphe-SDK-Swift-1.1.0はFacebookグループの[Orphe Developers Community](https://www.facebook.com/groups/1757831034527899/)に参加いただくことでダウンロードすることが出来ます。
 
 
 ## 使用ライブラリ
